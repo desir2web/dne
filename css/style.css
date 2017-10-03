@@ -290,78 +290,23 @@ h1, h2, h3, h4, h5, h6, strong {
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
     }
-        .header nav .menu-btn {
-            width: 30px;
-            height: 30px;
-            position: absolute;
-            left: 50%;
-            top: 60px;
-            margin: 0 0 0 -15px;
-            cursor: pointer;
-            background: url(../img/menu-btn.png) no-repeat;
-            background-size: 180px 60px;
-            background-position: -60px -15px;
-            z-index: 10;
-            
-            -webkit-transition: all 0.2s ease;
-            -moz-transition: all 0.2s ease;
-            -ms-transition: all 0.2s ease;
-            -o-transition: all 0.2s ease;
-            transition: all 0.2s ease;
-        }
-            .header nav .menu-btn:hover {
-                background-position: -50px -15px;
-            }
-        .header nav menu {
-            visibility: hidden;
-            position: absolute;
+        .header .menu {
+            position: relative;
             width: 100%;
-            top: -20px;
-            left: 0;
-            padding: 170px 0 40px 0;
-            opacity: 0;
-            background-color: rgba(255, 255, 255, 0);
-            
-            -webkit-transition: all 0.2s ease;
-            -moz-transition: all 0.2s ease;
-            -ms-transition: all 0.2s ease;
-            -o-transition: all 0.2s ease;
-            transition: all 0.2s ease;
+            text-align: right;
+            padding: 85px 60px 0 0;
+            text-transform: uppercase;
+            font: 14px/14px 'clearsans-bold';
+            letter-spacing: 0.1em;
         }
-
-            .header nav.active menu {
-                visibility: visible;
-                opacity: 1;
-                top: 0;
-                background-color: rgba(255, 255, 255, .98);
+            .header .menu ul li {
+                display: inline-block;
+                margin: 0 20px;
             }
-            .header nav.active .menu-btn {
-                background-position: -120px 0;
-                height: 60px;
-                width: 60px;
-                margin: 0 0 0 -30px;
-            }
-
-            .header nav menu .cat {
-                margin: 0 0 40px 0;
-            }
-                .header nav menu .cat .caption a {
-                    font-size: 24px;
-                    color: #424242;
+                .header .menu ul li a {
+                    color: #fff;
                 }
-                .header nav menu .cat ul {
-                    margin: 10px 0 0 0;
-                }
-                    .header nav menu .cat ul li {
-                        margin: 0 0 10px 0;
-                        line-height: 1.2em;
-                    }
-                        .header nav menu .cat ul li a {
-                            color: #767676;
-                        }
-                .header nav menu .cat a:hover {
-                    text-decoration: underline;
-                }
+    
     .header .slice-1 {
         display: none;
     }
@@ -380,7 +325,7 @@ h1, h2, h3, h4, h5, h6, strong {
         .inside .header {
             position: relative;
             background: #574130;
-            padding: 50px 0 70px 0;
+            padding: 50px 0 40px 0;
             margin: 0 0 40px 0;
         }
             .inside .header .slice-1 {
@@ -434,7 +379,7 @@ h1, h2, h3, h4, h5, h6, strong {
 .posts {}
     .posts h2.caption {
         text-align: center;
-        margin: 0 0 70px 0;
+        margin: 30px 0 70px 0;
         font-size: 60px;
         font-weight: normal;
     }
@@ -482,11 +427,13 @@ h1, h2, h3, h4, h5, h6, strong {
         }
 
 .socials {
-    background: #313131;
-    color: #fff;
-    height: 450px;
+    // background: #313131;
+    background: #fff;
+    color: #424242;
+    height: 420px;
     overflow: hidden;
-    margin: 0 0 40px 0;
+    // margin: 0 0 40px 0;
+    margin: 0;
 }
     .socials .photos {
         width: 100%;
@@ -561,24 +508,12 @@ h1, h2, h3, h4, h5, h6, strong {
                     background-color: #388fd0;
                 }
             .socials .social-btns a.in {
-                background-color: #9d7f5e;
+                background-color: #e12f67;
                 background-position: -180px 0;
             }
                 .socials .social-btns a.in:hover {
-                    background-color: #76542f;
+                    background-color: #b21647;
                 }
-    .inside .socials {
-        background: #f5f5f5;
-        color: #000;
-        height: 350px;
-        margin: 0;
-    }
-    .inside .tablecell {
-        height: 350px;
-    }
-        .inside .socials .slice-1 .slice-1-svg {
-            fill: #272727;
-        }
 
 
 
